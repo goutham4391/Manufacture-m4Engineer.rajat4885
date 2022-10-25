@@ -1,0 +1,360 @@
+<?xml version="1.0" encoding="UTF-8"?><rss version="2.0"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:wfw="http://wellformedweb.org/CommentAPI/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:atom="http://www.w3.org/2005/Atom"
+	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+	xmlns:slash="http://purl.org/rss/1.0/modules/slash/"
+	>
+
+<channel>
+	<title>Steve Doyle, Author at M4 Engineering</title>
+	<atom:link href="https://www.m4-engineering.com/author/sdoyle/feed/" rel="self" type="application/rss+xml" />
+	<link>https://www.m4-engineering.com/author/sdoyle/</link>
+	<description>Engineering</description>
+	<lastBuildDate>Thu, 10 Dec 2020 17:16:07 +0000</lastBuildDate>
+	<language>en-US</language>
+	<sy:updatePeriod>
+	hourly	</sy:updatePeriod>
+	<sy:updateFrequency>
+	1	</sy:updateFrequency>
+	<generator>https://wordpress.org/?v=6.0.2</generator>
+
+<image>
+	<url>https://www.m4-engineering.com/wp-content/uploads/2021/01/cropped-logo1_png_2020-32x32.png</url>
+	<title>Steve Doyle, Author at M4 Engineering</title>
+	<link>https://www.m4-engineering.com/author/sdoyle/</link>
+	<width>32</width>
+	<height>32</height>
+</image> 
+	<item>
+		<title>Flutter Analysis with pyNastran</title>
+		<link>https://www.m4-engineering.com/flutter-analysis-with-pynastran/</link>
+		
+		<dc:creator><![CDATA[Steve Doyle]]></dc:creator>
+		<pubDate>Wed, 08 Apr 2020 20:51:00 +0000</pubDate>
+				<category><![CDATA[Technical Blog]]></category>
+		<category><![CDATA[aerodynamics]]></category>
+		<category><![CDATA[Flutter]]></category>
+		<category><![CDATA[Nastran]]></category>
+		<category><![CDATA[pyNastran]]></category>
+		<guid isPermaLink="false">https://www.m4-engineering.com/?p=2861</guid>
+
+					<description><![CDATA[<p>pyNastran enables analysts using Nastran to efficiently create, manipulate, and extract data from models.&#160; It handles the underlying details so you get models that will run smoothly, without worrying about field formatting in the process. Challenges: Ensuring correct field formatting Inefficiencies in model creation Organizing and analyzing large result files Values: Quick verification of correct [&#8230;]</p>
+<p>The post <a rel="nofollow" href="https://www.m4-engineering.com/flutter-analysis-with-pynastran/">Flutter Analysis with pyNastran</a> appeared first on <a rel="nofollow" href="https://www.m4-engineering.com">M4 Engineering</a>.</p>
+]]></description>
+										<content:encoded><![CDATA[		<div data-elementor-type="wp-post" data-elementor-id="2861" class="elementor elementor-2861">
+						<div class="elementor-inner">
+				<div class="elementor-section-wrap">
+									<section data-particle_enable="false" data-particle-mobile-disabled="false" class="elementor-section elementor-top-section elementor-element elementor-element-c7172da elementor-section-boxed elementor-section-height-default elementor-section-height-default" data-id="c7172da" data-element_type="section">
+						<div class="elementor-container elementor-column-gap-default">
+							<div class="elementor-row">
+					<div class="elementor-column elementor-col-100 elementor-top-column elementor-element elementor-element-36613ff7" data-id="36613ff7" data-element_type="column">
+			<div class="elementor-column-wrap elementor-element-populated">
+							<div class="elementor-widget-wrap">
+						<div class="elementor-element elementor-element-40c2db55 elementor-widget elementor-widget-text-editor" data-id="40c2db55" data-element_type="widget" data-widget_type="text-editor.default">
+				<div class="elementor-widget-container">
+								<div class="elementor-text-editor elementor-clearfix">
+				<p> pyNastran enables analysts using Nastran to efficiently create, manipulate, and extract data from models.  It handles the underlying details so you get models that will run smoothly, without worrying about field formatting in the process.</p>
+<p><!-- /wp:paragraph --></p>
+<p><!-- wp:paragraph --></p>
+<p>Challenges:                                   </p>
+<p><!-- /wp:paragraph --></p>
+<p><!-- wp:list --></p>
+<ul>
+<li>Ensuring correct field formatting</li>
+<li>Inefficiencies in model creation</li>
+<li>Organizing and analyzing large result files</li>
+</ul>
+<p><!-- /wp:list --></p>
+<p><!-- wp:paragraph --></p>
+<p>Values:</p>
+<p><!-- /wp:paragraph --></p>
+<p><!-- wp:list --></p>
+<ul>
+<li>Quick verification of correct geometry</li>
+<li>Easy accessibility of data</li>
+<li>Effortless conversions to desired units</li>
+</ul>
+<p><!-- /wp:list --></p>
+<p><!-- wp:heading {"level":1} --></p>
+<h1>An Overview of pyNastran</h1>
+<p><!-- /wp:heading --></p>
+<p><!-- wp:paragraph --></p>
+<p>pyNastran is an open source Python interface library to the various Nastran file formats (BDF, OP2, OP4) that has had continuous development since 2011. Using the BDF interface, you can read, edit, and write Nastran geometry without worrying about field formatting. pyNastran also performs multiple checks to ensure your model is correct. Using the OP2 interface, you can read large result files quickly and efficiently. Additionally, you can extract a subset of the result data and write OP2 and F06 result files.</p>
+<p><!-- /wp:paragraph --></p>
+<p><!-- wp:paragraph --></p>
+<p>Rather than replacing FEMAP, Simcenter3D, or PATRAN, the goal of pyNastran is to make engineers more efficient and avoid some of the common pitfalls with model creation and manipulation, as well as make it easy to extract results and put them into external programs. </p>
+<p><!-- /wp:paragraph --></p>
+<p><!-- wp:image {"align":"center","id":2820,"sizeSlug":"large"} --></p>
+<div>
+<figure><img src="https://www.m4-engineering.com/wp-content/uploads/2020/04/pynastran-1-1024x530.png" alt="" /></figure>
+</div>
+<p><!-- /wp:image --></p>
+<p><!-- wp:paragraph --></p>
+<p>In this post, pyNastran will be used to demonstrate preliminary flutter analysis of an aircraft:</p>
+<p><!-- /wp:paragraph --></p>
+<p><!-- wp:list --></p>
+<ul>
+<li>F06 Flutter plotting</li>
+<li>The pyNastran GUI</li>
+<li>Creating Animations</li>
+</ul>
+<p><!-- /wp:list --></p>
+<p><!-- wp:heading --></p>
+<h2><a style="font-size: 20px;font-weight: 600;background-color: #ffffff">General Aviation Aircraft Example              </a></h2>
+<p><!-- /wp:heading --></p>
+<p><!-- wp:paragraph --></p>
+<p>This example is a notional two-passenger general aviation aircraft with an all-composite structure.  The fuselage, wing, and tails were optimized with the propeller/motor, batteries, and passengers all modeled as non-structural (concentrated) masses.</p>
+<p><!-- /wp:paragraph --></p>
+<p><!-- wp:image {"align":"center","id":2821,"sizeSlug":"large"} --></p>
+<div>
+<figure><img src="https://www.m4-engineering.com/wp-content/uploads/2020/04/pynastran-3.png" alt="" /></figure>
+</div>
+<p><!-- /wp:image --></p>
+<p><!-- wp:heading --></p>
+<h2> Step 1: Loading Geometry</h2>
+<p><!-- /wp:heading --></p>
+<p><!-- wp:paragraph --></p>
+<p>Once the pyNastran GUI executable has been opened, the geometry can be loaded using the <strong>File -&gt; Load Geometry…</strong> option.</p>
+<p><!-- /wp:paragraph --></p>
+<p><!-- wp:image {"align":"center","id":2822,"sizeSlug":"large"} --></p>
+<div>
+<figure><img src="https://www.m4-engineering.com/wp-content/uploads/2020/04/pynastran-4.png" alt="" /></figure>
+</div>
+<p><!-- /wp:image --></p>
+<p><!-- wp:paragraph {"align":"left"} --></p>
+<p>Using the <strong>View -&gt;</strong> <strong>Edit Geometry Properties</strong> window, the opacity of the <em>main</em> model may also be increased to better see the internal structure.</p>
+<p> </p>
+<p><!-- /wp:paragraph --></p>
+<p><!-- wp:image {"align":"center","id":2823,"sizeSlug":"large"} --></p>
+<div>
+<figure><img src="https://www.m4-engineering.com/wp-content/uploads/2020/04/pynastran-5-1024x711.jpg" alt="" /></figure>
+</div>
+<p><!-- /wp:image --></p>
+<p><!-- wp:paragraph --></p>
+<p> </p>
+<p>Zooming in and taking a look at the mesh with the edges (<strong>w</strong> for wireframe and <strong>e</strong> for edges or by using the <img loading="lazy" src="https://www.m4-engineering.com/wp-content/uploads/2020/04/image.png" alt="" width="16" height="16" /> and <img loading="lazy" style="font-family: 'Roboto Condensed', Arial, Helvetica, sans-serif;font-size: 14px;font-style: normal;font-weight: 400" src="https://www.m4-engineering.com/wp-content/uploads/2020/04/tedges.png" alt="" width="16" height="16" /> icons, respectively) shows a quad dominated mesh.  This is important as quads are more accurate so fewer elements can be used.</p>
+<p><!-- /wp:paragraph --></p>
+<p><!-- wp:image {"align":"center","id":2826,"sizeSlug":"large"} --></p>
+<div>
+<figure><img src="https://www.m4-engineering.com/wp-content/uploads/2020/04/pynastran-6-1024x764.jpg" alt="" /></figure>
+</div>
+<p><!-- /wp:image --></p>
+<p><!-- wp:paragraph --></p>
+<p>Using the <strong>View -&gt; Edit Geometry Properties</strong> menu, we can also look at the <strong>material coordinate systems (MCID)</strong> for each layer (Layer 1-<strong><span style="color: red">red</span></strong>, Layer 2-<strong><span style="color: blue">blue</span></strong>, Layer 3-<strong><span style="color: black">black</span></strong>) in order to verify that it’s modeled as intended.</p>
+<p><!-- /wp:paragraph --></p>
+<p><!-- wp:gallery {"ids":[2827,2828]} --></p>
+<figure>
+<ul>
+<li>
+<figure><img src="https://www.m4-engineering.com/wp-content/uploads/2020/04/pynastran-7.1.png" alt="" data-id="2827" data-link="https://www.m4-engineering.com/?attachment_id=2827" /></figure>
+</li>
+<li>
+<figure><img src="https://www.m4-engineering.com/wp-content/uploads/2020/04/pynastran-7.png" alt="" data-id="2828" data-link="https://www.m4-engineering.com/?attachment_id=2828" data-full-url="https://www.m4-engineering.com/wp-content/uploads/2020/04/pynastran-7.png" /></figure>
+</li>
+</ul>
+</figure>
+<p><!-- /wp:gallery --></p>
+<p><!-- wp:heading --></p>
+<h2>Step 2: View Flutter Results</h2>
+<p><!-- /wp:heading --></p>
+<p><!-- wp:paragraph --></p>
+<p>Working with aerodynamics often involves different unit systems.  With English units, aerodynamic models require the use of PARAM,WTMASS to handle the conversion of weight to mass. However, PARAM,WTMASS does not convert air density units. To address this, the pyNastran F06 plotter handles the conversion for you. The unit system for the Electric GA model is presented below.</p>
+<p> </p>
+<table>
+<tbody>
+<tr>
+<th><strong>Type</strong></th>
+<th><strong>Desired Units</strong></th>
+</tr>
+<tr>
+<td>PARAM, WTMASS</td>
+<td>1/g = 1/(12*32.2) = 0.002588</td>
+</tr>
+<tr>
+<td>Length</td>
+<td>inches</td>
+</tr>
+<tr>
+<td>Time</td>
+<td>seconds</td>
+</tr>
+<tr>
+<td>Input Velocity</td>
+<td>inches/second</td>
+</tr>
+<tr>
+<td>Weight</td>
+<td>pounds</td>
+</tr>
+<tr>
+<td>Mass</td>
+<td>slinch</td>
+</tr>
+<tr>
+<td>Structural Density</td>
+<td>pounds/inch<sup>3</sup></td>
+</tr>
+<tr>
+<td>Air Density</td>
+<td>slinch/inch<sup>3</sup></td>
+</tr>
+<tr>
+<td>Output Velocity</td>
+<td>knots</td>
+</tr>
+</tbody>
+</table>
+<p> </p>
+<p><!-- /wp:paragraph --></p>
+<p><!-- wp:paragraph --></p>
+<p>The flutter plotter supports a series of unit systems including:</p>
+<p><!-- /wp:paragraph --></p>
+<table>
+<tbody>
+<tr>
+<th><strong>Unit System</strong></th>
+<th><strong>Input/Output Velocity</strong></th>
+</tr>
+<tr>
+<td>english_in</td>
+<td>in/sec</td>
+</tr>
+<tr>
+<td>english_ft</td>
+<td>ft/sec</td>
+</tr>
+<tr>
+<td>english_kt</td>
+<td>knots</td>
+</tr>
+<tr>
+<td>SI</td>
+<td>m/sec</td>
+</tr>
+</tbody>
+</table>
+<p><!-- wp:paragraph --></p>
+<p>The F06 output file has velocity in units of inches/second, while it’s desired to have the velocity plotted in knots (or possibly SI).  Additionally, rather than true airspeed, the equivalent airspeed will be used.  Equivalent airspeed normalizes the velocity to sea level to reduce the amount of analysis required using:</p>
+<p><!-- /wp:paragraph --> <img class="aligncenter" src="http://latex.codecogs.com/gif.latex?V_{EAS} = V_{TAS} \sqrt{\frac{\rho}{\rho_0}}" border="0" /> <!-- wp:paragraph --></p>
+<p>Create the flutter plots by typing the following on the command line:</p>
+<p><!-- /wp:paragraph --> <span style="font-family: Courier New"> f06 plot_145 general_aviation_flutter.f06 &#8211;nopoints &#8211;eas &#8211;in_units english_in &#8211;out_units english_kt &#8211;modes 1:15 &#8211;rootlocus </span> <!-- wp:paragraph --></p>
+<p>Where:</p>
+<p><!-- /wp:paragraph --></p>
+<p><!-- wp:list --></p>
+<ul>
+<li><strong>eas</strong> flags switches from true airspeed to equivalent airspeed</li>
+<li><strong>modes</strong> 1:15 includes mode 1 to mode 15 to reduce clutter on the plot</li>
+<li><strong>rootlocus</strong> adds a root locus plot of the eigenvalues</li>
+</ul>
+<p><!-- /wp:list --></p>
+<p><!-- wp:paragraph --></p>
+<p>The Velocity vs. Damping (V-g) and Velocity vs. Frequency (V-f) curves are shown below.  A negative damping corresponds to a stable mode, while a positive damping corresponds to an unstable mode.  Another way to think about it is by asking the question: ‘How much damping is required to make the aircraft mode stable?’  While a bit difficult to see, Mode 15 is the critical flutter mode and crosses from negative to positive damping at 290 knots.</p>
+<p><!-- /wp:paragraph --></p>
+<p><!-- wp:image {"align":"center","id":2833,"sizeSlug":"large"} --></p>
+<div>
+<figure><img src="https://www.m4-engineering.com/wp-content/uploads/2020/04/pynastran-12.png" alt="" /></figure>
+</div>
+<p><!-- /wp:image --></p>
+<p><!-- wp:paragraph --></p>
+<p>Instability can sometimes be better seen using the root locus, which occurs when there is a root in the right half plane.  Here, the points grow in size as velocity increases.</p>
+<p><!-- /wp:paragraph --></p>
+<p><!-- wp:image {"align":"center","id":2834,"sizeSlug":"large"} --></p>
+<div>
+<figure><img src="https://www.m4-engineering.com/wp-content/uploads/2020/04/pynastran-13.png" alt="" /></figure>
+</div>
+<p><!-- /wp:image --></p>
+<p><!-- wp:paragraph --></p>
+<p>Zooming in on the plot can be accomplished by using the dynamic zooming buttons, so we can zoom in on Mode 15 to make its behavior more obvious. </p>
+<p><!-- /wp:paragraph --></p>
+<p><!-- wp:image {"id":2835,"sizeSlug":"large"} --></p>
+<figure><img src="https://www.m4-engineering.com/wp-content/uploads/2020/04/pynastran-14.png" alt="" /></figure>
+<p><!-- /wp:image --></p>
+<p><!-- wp:paragraph --></p>
+<p>Here we see a slight hump mode instability (at imaginary eigenvalue of 188.9; roughly 125 knots), but it’s not a concern as structural damping will address this.  There is a more severe instability developing as the speed (and point size) gets larger.</p>
+<p><!-- /wp:paragraph --></p>
+<p><!-- wp:heading --></p>
+<h2>Step 3: Animating Flutter Mode Shapes</h2>
+<p><!-- /wp:heading --></p>
+<p><!-- wp:paragraph --></p>
+<p>We can load the flutter result by selecting <strong>File -&gt; Load Results&#8230;</strong> and selecting the result case from the sidebar.</p>
+<p><!-- /wp:paragraph --></p>
+<p><!-- wp:image {"align":"center","id":2836,"sizeSlug":"large"} --></p>
+<div>
+<figure><img src="https://www.m4-engineering.com/wp-content/uploads/2020/04/pynastran-15-1024x530.png" alt="" /></figure>
+</div>
+<p><!-- /wp:image --></p>
+<p><!-- wp:paragraph --></p>
+<p>Opening the <strong>View -&gt; Create Animation… </strong>menu brings up the following menu.  As this is a complex result, it’s best to set the <strong>Animation Type</strong> to <strong>Phase</strong> and click <strong>Run</strong> the animation.  Update the <strong>scale</strong>, <strong>total time</strong>, <strong>frames/second</strong> as necessary to generate a smooth result.</p>
+<div>
+<figure><img src="https://www.m4-engineering.com/wp-content/uploads/2020/04/pynastran-16.png" alt="" /></figure>
+</div>
+<p><!-- /wp:image --></p>
+<p><!-- wp:paragraph --></p>
+<p>Once you are satisfied, unclick the <strong>Animate in GUI</strong> button and click <strong>Run</strong> to create an animation.</p>
+<p><!-- /wp:paragraph --></p>
+<p><!-- wp:image {"id":2840,"sizeSlug":"large"} --></p>
+<figure><img src="https://www.m4-engineering.com/wp-content/uploads/2020/04/electric_ga_flutter_mode_shape_eigenvectors.gif" alt="" /></figure>
+<p><!-- /wp:image --></p>
+<p><!-- wp:heading {"level":1} --></p>
+<h1>Conclusion</h1>
+<p><!-- /wp:heading --></p>
+<p><!-- wp:paragraph --></p>
+<p>This post has provided a basic overview of the pyNastran GUI.  The F06 flutter plotter has been shown with an emphasis on a preliminary flutter analysis of a notional general aviation aircraft.</p>
+<p><!-- /wp:paragraph --></p>
+<p><!-- wp:heading --></p>
+<h2>How to Obtain pyNastran</h2>
+<p><!-- /wp:heading --></p>
+<p><!-- wp:paragraph --></p>
+<p>The GUI is available for download at: <a href="https://sourceforge.net/projects/pynastran/files/?source=navbar">https://sourceforge.net/projects/pynastran/files/?source=navbar</a></p>
+<p><!-- /wp:paragraph --></p>
+<p><!-- wp:paragraph --></p>
+<p>The source code can be found at: <a href="https://github.com/SteveDoyle2/pyNastran">https://github.com/SteveDoyle2/pyNastran</a>.</p>
+<p><!-- /wp:paragraph --></p>
+<p><!-- wp:paragraph --></p>
+<p>Or installed by running:</p>
+<p><!-- /wp:paragraph --></p>
+<p><!-- wp:paragraph --></p>
+<p>&gt;&gt;&gt; pip install pyNastran</p>
+<p><!-- /wp:paragraph --></p>
+<p><!-- wp:paragraph --></p>
+<p>The documentation can be found at: <a href="https://pynastran-git.readthedocs.io/en/1.3/quick_start/index.html">https://pynastran-git.readthedocs.io/en/1.3/quick_start/index.html</a>. </p>
+<p><!-- /wp:paragraph --></p>
+<p><!-- wp:paragraph --></p>
+<p>Note: pyNastran is an open source project; bug reports, feature requests and help with development is appreciated and encouraged <img src="https://s.w.org/images/core/emoji/14.0.0/72x72/1f60a.png" alt="😊" class="wp-smiley" style="height: 1em; max-height: 1em;" /></p>
+<p><!-- /wp:paragraph --></p>
+<p><!-- wp:media-text {"mediaId":2838,"mediaType":"image","mediaWidth":25} --></p>
+<div style="grid-template-columns: 25% auto">
+<figure><img src="https://www.m4-engineering.com/wp-content/uploads/2020/04/pynastran-18.jpg" alt="" /></figure>
+<div>
+<p><!-- wp:heading --></p>
+<h2>Written by Steve Doyle</h2>
+<p><!-- /wp:heading --></p>
+<p><!-- wp:paragraph --></p>
+<p>Steve Doyle is a Senior Aerospace Engineer with a background in structural analysis, CFD, and programming.  He’s also the author of pyNastran.  Outside of dorky projects, he likes to hike and rock climb!</p>
+<p><!-- /wp:paragraph --></p>
+</div>
+</div>
+<p><!-- /wp:media-text --></p>
+<p><!-- wp:paragraph --></p>
+<p><!-- /wp:paragraph --></p>					</div>
+						</div>
+				</div>
+						</div>
+					</div>
+		</div>
+								</div>
+					</div>
+		</section>
+									</div>
+			</div>
+					</div>
+		<p>The post <a rel="nofollow" href="https://www.m4-engineering.com/flutter-analysis-with-pynastran/">Flutter Analysis with pyNastran</a> appeared first on <a rel="nofollow" href="https://www.m4-engineering.com">M4 Engineering</a>.</p>
+]]></content:encoded>
+					
+		
+		
+			</item>
+	</channel>
+</rss>
